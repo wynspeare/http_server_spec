@@ -5,4 +5,7 @@ Gem::Specification.new do |s|
   s.authors = ["Eric Meyer"]
   s.homepage = "https://github.com/ericmeyer/http_server_spec"
   s.license = "MIT"
+  s.files = [
+    "lib/http_server_spec/foo.rb"
+  ]
 end
