@@ -1,0 +1,19 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    colorize (0.8.1)
+    gherkin-ruby (0.3.2)
+    json (2.1.0)
+    spinach (0.10.1)
+      colorize
+      gherkin-ruby (>= 0.3.2)
+      json
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  spinach
+
+BUNDLED WITH
+   1.16.4
