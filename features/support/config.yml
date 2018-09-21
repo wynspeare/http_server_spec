@@ -1,0 +1,4 @@
+server:
+  hostname: "localhost"
+  port: 5000
+  protocol: "http"
