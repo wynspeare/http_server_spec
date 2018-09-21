@@ -1,3 +1,4 @@
+@simple-get
 Feature: Executing a simple GET request
 
   Scenario: Getting the index returns a 200
