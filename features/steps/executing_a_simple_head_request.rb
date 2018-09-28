@@ -3,6 +3,10 @@ class Spinach::Features::ExecutingASimpleHeadRequest < Spinach::FeatureSteps
     @response = Requests.head("/simple_get")
   end
 
+  step 'I make a HEAD request to "/get_with_body"' do
+    @response = Requests.head("/get_with_body")
+  end
+
   step 'my response should have status code 200' do
     expect(@response.code).to eq(200)
   end
