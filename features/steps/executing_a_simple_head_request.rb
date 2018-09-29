@@ -8,10 +8,10 @@ class Spinach::Features::ExecutingASimpleHeadRequest < Spinach::FeatureSteps
   end
 
   step 'my response should have status code 200' do
-    expect(@response.code).to eq(200)
+    expect(@response.status_code).to eq(200)
   end
 
   step 'my response should have no body' do
-    expect(@response.body.to_s).to be_empty
+    expect(@response.body).to be_empty
   end
 end

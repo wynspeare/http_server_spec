@@ -4,7 +4,7 @@ class Spinach::Features::SimplePostRequest < Spinach::FeatureSteps
   end
 
   step 'my response should have status code 200' do
-    expect(@response.code).to eq 200
+    expect(@response.status_code).to eq 200
   end
 
   step 'my response body should equal the body of my request' do

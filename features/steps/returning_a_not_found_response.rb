@@ -4,6 +4,6 @@ class Spinach::Features::ReturningANotFoundResponse < Spinach::FeatureSteps
   end
 
   step 'my response should have status code 404' do
-    expect(@response.code).to eq 404
+    expect(@response.status_code).to eq 404
   end
 end
