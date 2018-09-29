@@ -4,6 +4,10 @@ class Response
     self.httpartyResponse = httpartyResponse
   end
 
+  def allowed_headers
+    httpartyResponse.headers["allow"].split(",")
+  end
+
   def body
     httpartyResponse.body.to_s
   end

@@ -11,6 +11,11 @@ module Requests
     Response.new(HTTParty.head("#{base_url}#{path}"))
   end
 
+  def self.options(path)
+    base_url = "#{PROTOCOL}://#{HOSTNAME}:#{PORT}"
+    Response.new(HTTParty.options("#{base_url}#{path}"))
+  end
+
   def self.post(path, body="")
     base_url = "#{PROTOCOL}://#{HOSTNAME}:#{PORT}"
     Response.new(HTTParty.post("#{base_url}#{path}", {body: body}))
