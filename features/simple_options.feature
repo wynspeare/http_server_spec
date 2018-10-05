@@ -1,3 +1,4 @@
+@simple-options
 Feature: Simple OPTIONS Requests
 
   Scenario: Finding OPTIONS for an endpoint with only GET
