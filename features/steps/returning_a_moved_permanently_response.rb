@@ -8,7 +8,7 @@ class Spinach::Features::ReturningAMovedPermanentlyResponse < Spinach::FeatureSt
   end
 
   step 'my response should have a location header with the "/simple_get" URI' do
-    expect(@response.location).to contain_exactly("/simple_get")
+    expect(@response.location).to eq("/simple_get")
   end
 
   step 'my response should have an empty body' do

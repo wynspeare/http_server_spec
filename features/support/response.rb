@@ -5,7 +5,7 @@ class Response
   end
 
   def location
-    httpartyResponse.headers["location"].split(",")
+    httpartyResponse.headers["location"]
   end
 
   def allowed_headers
