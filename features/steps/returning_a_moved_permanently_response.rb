@@ -7,8 +7,8 @@ class Spinach::Features::ReturningAMovedPermanentlyResponse < Spinach::FeatureSt
     expect(@response.status_code).to eq(301)
   end
 
-  step 'my response should have a location header with the "/simple_get" URI' do
-    expect(@response.location).to eq("/simple_get")
+  step 'my response should have a location header with the "http://0.0.0.0:5000/simple_get" URI' do
+    expect(@response.location).to eq("#{PROTOCOL}://#{HOSTNAME}:#{PORT}/simple_get")
   end
 
   step 'my response should have an empty body' do
