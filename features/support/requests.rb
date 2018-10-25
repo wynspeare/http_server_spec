@@ -3,7 +3,7 @@ require "httparty"
 module Requests
   def self.get(path)
     base_url = "#{PROTOCOL}://#{HOSTNAME}:#{PORT}"
-    Response.new(HTTParty.get("#{base_url}#{path}"))
+    Response.new(HTTParty.get("#{base_url}#{path}", follow_redirects: false))
   end
 
   def self.head(path)
