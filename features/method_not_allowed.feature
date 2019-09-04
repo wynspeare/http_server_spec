@@ -1,4 +1,4 @@
-@not-allowed
+@not-allowed @wip
 Feature: Returning a method not allowed response
 
   Scenario: Finding GET for an endpoint with only HEAD

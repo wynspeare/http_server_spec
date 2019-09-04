@@ -1,4 +1,4 @@
-@simple-redirect
+@simple-redirect @wip
 Feature: Returning a moved permanently response
 
   Scenario: Getting a resource that has been moved to a different location

@@ -1,4 +1,4 @@
-@simple-options
+@simple-options @wip
 Feature: Simple OPTIONS Requests
 
   Scenario: Finding OPTIONS for an endpoint with only GET

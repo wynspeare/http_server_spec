@@ -1,4 +1,4 @@
-@simple-head
+@simple-head @wip
 Feature: Executing a simple HEAD request
 
   @simple-head

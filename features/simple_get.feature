@@ -1,4 +1,4 @@
-@simple-get
+@simple-get @wip
 Feature: Executing a simple GET request
 
   Scenario: Getting /simple_get returns a 200
